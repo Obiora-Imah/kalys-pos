@@ -1,0 +1,35 @@
+{
+  "name": "pos-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "ts-node scripts/seed.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "latest",
+    "csv-parse": "latest",
+    "dotenv": "latest",
+    "jsonwebtoken": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest",
+    "next": "latest",
+    "next-connect": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "swr": "latest",
+    "typescript": "latest",
+    "zustand": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7",
+    "ts-node": "latest"
+  }
+}
