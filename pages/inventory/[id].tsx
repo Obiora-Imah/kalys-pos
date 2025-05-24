@@ -13,7 +13,11 @@ export default function InventoryDetailPage() {
       setItem(data)
     }
   }
-  useEffect(fetchItem, [id])
+  useEffect(() => {
+    (async () => {
+      await fetchItem()
+    })()
+  }, [id])
   const updateInventory = async () => {
     await fetch(`/api/inventory/${id}`, {
       method:'PUT',

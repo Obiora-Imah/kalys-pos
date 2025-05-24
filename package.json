@@ -12,7 +12,7 @@
     "bcryptjs": "latest",
     "csv-parse": "latest",
     "dotenv": "latest",
-    "jsonwebtoken": "latest",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "latest",
     "mongoose": "latest",
     "next": "latest",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.7",
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "latest",
     "@types/react": "latest",
     "autoprefixer": "^10.4.21",
