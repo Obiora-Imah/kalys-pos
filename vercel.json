@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1.ts" },
+    { "src": "(.*)", "dest": "/" }
+  ],
+  "github": {
+    "silent": true,
+    "autoJobCancelation": false
+  },
+  "git": {
+    "deploymentEnabled": true
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        },
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=15552000; includeSubdomains"
+        }
+      ]
+    }
+  ]
+}
